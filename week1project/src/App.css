@@ -1,0 +1,53 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for 2 rows of 7 */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 180px;
+  align-items: start;
+  justify-content: center
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  background-color: white;
+  transition: transform 0.2s ease;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}
+
+.Card img {
+  width: 54px;
+  height: 54px;
+}
+
+.Card h5 {
+  margin: 10px 0;
+  align-content: center;
+}
+
+.Card button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.Card.green {
+  background-color: #3edb3e;
+}
+
+.Card.blue {
+  background-color: #2ca8e2;
+}
